@@ -1,8 +1,7 @@
 {
   "_args": [
     [
-      "async-validator@1.8.2",
-      "/Users/chenshuai/workspace/51shebao/code/FE/vue-reservoir"
+      "async-validator@1.8.2"
     ]
   ],
   "_from": "async-validator@1.8.2",
@@ -26,7 +25,6 @@
   ],
   "_resolved": "https://registry.npmjs.org/async-validator/-/async-validator-1.8.2.tgz",
   "_spec": "1.8.2",
-  "_where": "/Users/chenshuai/workspace/51shebao/code/FE/vue-reservoir",
   "author": {
     "name": "yiminghe@gmail.com"
   },
@@ -84,7 +82,7 @@
     "start": "rc-tools run server",
     "test": "jest"
   },
-  "version": "5.1.0",
+  "version": "5.1.5",
   "publishConfig": {
     "registry": "http://mvn.shebao.net/repository/npm-intrenal/"
   }

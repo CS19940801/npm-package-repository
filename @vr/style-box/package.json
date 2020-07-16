@@ -1,0 +1,23 @@
+{
+  "author": {
+    "name": "cs_enjoy",
+    "email": "541268303@qq.com"
+  },
+  "bundleDependencies": false,
+  "dependencies": {
+  },
+  "deprecated": false,
+  "description": "vue路由约定51内部改造版本",
+  "homepage": "https://vue-reservoir.shebao.net/components/AutoRouter",
+  "license": "MIT",
+  "main": "index.js",
+  "name": "@vr/style-box",
+  "version": "1.0.1",
+  "publishConfig": {
+    "registry": "http://mvn.shebao.net/repository/npm-intrenal/"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  }
+}

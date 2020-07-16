@@ -1,0 +1,189 @@
+// 后台规范2.0 
+// 颜色
+$c-main:#3F6283;
+$c-green:#21A5A5;
+$c-yellow:#FDB620;
+$c-red:#F85359;
+$c-blue:#2773FF;
+$c-white:#fff;
+$c-bg-deep:#001529;
+$c-title:#333;
+$c-text:#333;
+$c-title-sub:#666;
+$c-weak:#aaa;
+$c-border:#D4DAE2;
+$c-btn-bg:'#f1f1f1';
+$c-bg:#f5f5f5;
+//常用字体大小
+$font-min:12px;
+$font-nor:14px;
+$font-big:16px;
+$font-title:18px;
+$font-max:20px;
+
+// 超出隐藏
+@mixin text-overflow($width) {
+	width: $width;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+// 横竖居中 translate版
+@mixin center {
+	position: absolute;
+	left:50%;
+	top:50%;
+	transform: translate(-50%,-50%);
+}
+@mixin centerX {
+	position: absolute;
+	left:50%;
+	transform: translateX(-50%);
+}
+@mixin centerY {
+	position: absolute;
+	top:50%;
+	transform: translateY(-50%);
+}
+//透明度
+ @mixin opacity($num){
+	opacity: ($num/100);
+	filter:alpha(opacity=$num);
+}
+// 行高+字体
+@mixin font-line-height($px){
+	font-size:$px;
+	line-height: ($px+8); 
+}
+// 边框
+@mixin border($px,$style,$color){
+	border-width:$px;
+	border-style: $style;
+	border-color: $color;
+}
+//圆角
+@mixin br($size){
+	border-radius: $size;
+	-webkit-border-radius: $size;
+	-moz-border-radius: $size;
+	-o-border-radius: $size;
+	-ms-border-radius: $size;
+}
+@mixin br-t-l($size){
+	border-top-left-radius: $size;
+	-webkit-border-top-left-radius: $size;
+	-moz-border-top-left-radius: $size;
+	-o-border-top-left-radius: $size;
+	-ms-border-top-left-radius: $size;
+}
+@mixin br-t-r($size){
+	border-top-right-radius: $size;
+	-webkit-border-top-right-radius: $size;
+	-moz-border-top-right-radius: $size;
+	-o-border-top-right-radius: $size;
+	-ms-border-top-right-radius: $size;
+}
+@mixin br-b-r($size){
+	border-bottom-right-radius: $size;
+	-webkit-border-bottom-right-radius: $size;
+	-moz-border-bottom-right-radius: $size;
+	-o-border-bottom-right-radius: $size;
+	-ms-border-bottom-right-radius: $size;
+}
+@mixin br-b-l($size){
+	border-bottom-left-radius: $size;
+	-webkit-border-bottom-left-radius: $size;
+	-moz-border-bottom-left-radius: $size;
+	-o-border-bottom-left-radius: $size;
+	-ms-border-bottom-left-radius: $size;
+}
+@mixin shadow($x,$y,$radius,$rgba){
+	box-shadow: $arguments;
+	-webkit-box-shadow: $arguments;
+	-moz-box-shadow: $arguments;
+	-o-box-shadow: $arguments;
+	-ms-box-shadow: $arguments;	
+}
+@mixin clearfloat {
+	*zoom: 1;
+	&:after {
+		content: ".";
+		display: block;
+		clear: both;
+		visibility: hidden;
+		line-height: 0;
+		height: 0;
+		font-size:0;
+	}
+}
+// 常用通用类
+// 字体颜色
+.c_red,
+.redcolor {
+	color: $c-red;
+}
+.c_green {
+	color: $c-green;
+}
+.c_blue,
+.more,
+.highcolor {
+	color: $c-blue !important;
+}
+//清浮动clearfix 通用
+.clearfix {
+	@include clearfloat;
+}
+.m0{
+  margin:0 !important;
+}
+.ml10 {
+	margin-left: 10px;
+}
+.ml20 {
+	margin-left: 20px;
+}
+.mr10{
+    margin-right: 10px;
+}
+.mr20 {
+	margin-right: 20px;
+}
+.mr40 {
+	margin-right: 40px;
+}
+.mb20 {
+	margin-bottom: 20px;
+}
+.mb50 {
+	margin-bottom: 50px;
+}
+.mt20 {
+	margin-top: 20px;
+}
+.mt40 {
+	margin-top: 40px;
+}
+.link {
+	color: $c-blue;
+	font-size: 14px;
+	margin-left: 20px;
+}
+.fl{
+    float:left;
+}
+.fr{
+    float:right;
+}
+.w_100 {
+	width: 100% !important;
+}
+.opt_style {
+  cursor: pointer;
+}
+.opt_no {
+  cursor: not-allowed;
+}
+.pos_re{
+	position: relative;
+}
