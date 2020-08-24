@@ -1,0 +1,7 @@
+node_modules/
+.DS_Store
+.idea/
+.idea
+.editorconfig
+LICENSE
+*/node_modules/

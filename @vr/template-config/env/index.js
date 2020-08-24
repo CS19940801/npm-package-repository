@@ -8,7 +8,7 @@ const ENV_CONFIG = {
         to_logout: "//upm.81cs_enjoy.com/loginout.htm?referrerUrl=",
         old_md_url: "//config.81cs_enjoy.com",
         salary_url: "//salary.shebao.net",
-        static_url: "//gs0.101hr.com",
+        static_url: "//gs0.102hr.com",
         vr_ui: "//vue-reservoir.shebao.net",
     },
     demos: {
@@ -18,7 +18,7 @@ const ENV_CONFIG = {
         to_logout: "//demos.upm.81cs_enjoy.com/loginout.htm?referrerUrl=",
         old_md_url: "//demos.config.81cs_enjoy.com",
         salary_url: "//demos.salary.shebao.net",
-        static_url: "//demos.global.static.101hr.com",
+        static_url: "//demos.global.static.102hr.com",
         vr_ui: "//demos-vue-reservoir.shebao.net",
     },
     test: {
@@ -28,7 +28,7 @@ const ENV_CONFIG = {
         to_logout: "//test.upm.shebao.net/loginout.htm?referrerUrl=",
         old_md_url: "//test.config.81cs_enjoy.com",
         salary_url: "//test.salary.shebao.net",
-        static_url: "//test-global-static.101hr.com",//test-global-static.101hr.com/
+        static_url: "//test-global-static.102hr.com",//test-global-static.102hr.com/
         vr_ui: "//test-vue-reservoir.shebao.net",
     },
     development: {

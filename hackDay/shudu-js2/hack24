@@ -1,0 +1,24 @@
+hack24:6YToUb8XqO5xwg==
+登录服务器： 
+ssh $user@192.168.8.86 回车后输入文件中的密码
+## 用户名密码见文件第一行，格式==> "用户:密码"
+拷贝文件或目录从本地到服务器上：
+scp <filename> $user@192.168.8.86:~
+## filename 为本地文件名
+scp -r <dirname> $user@192.168.8.86:~
+## dirname 为本地目录名
+拷贝服务器上的文件或目录到pod中：
+kubectl cp <filename/dirname>  <podname>:/tmp/
+## 此时，文件已传到pod的/tmp/目录下
+进入pod：
+kubectl exec -it <podname> bash
+## 进入容器后，把/tmp/目录下的文件移动到需要的位置，并手动执行
+查看 pod cpu内存使用情况
+kubectl top pod
+查看 pod 名字：
+kubectl get pod
+查看 pod 状态：
+kubectl describe pod <podname>
+
+
+执行方法node go.js

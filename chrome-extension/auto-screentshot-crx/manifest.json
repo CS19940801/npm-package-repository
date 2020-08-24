@@ -1,0 +1,40 @@
+{
+	"manifest_version": 2,
+	"name": "auto-screentshot-帅仔",
+	"version": "1.0",
+	"description": "浏览器自动截屏-保存插件",
+	"author": "sxei",
+	"icons":
+	{
+		"48": "icon.png",
+		"128": "icon.png"
+	},
+	"content_scripts": 
+	[
+		{
+			"matches": ["https://exmail.qq.com/cgi-bin/*"],
+			"js": ["content-script.js","html2canvas.js","jquery.min.js","FileSaver.min.js"],
+			"run_at": "document_start"
+		}
+	],
+	"permissions":[
+		"tabs",
+		"contextMenus"
+	],
+	"web_accessible_resources": 
+	[
+		"untils/inject.js",
+		"html2canvas.js",
+		"jquery.min.js",
+		"FileSaver.min.js"
+	],
+	"page_action": {
+		"default_icon": "icon.png",
+		"default_title": "我是帅仔！",
+		"default_popup": "popup.html"
+	},
+	"background":{
+		"page":"background/background.html"
+	},
+	"default_locale": "zh_CN"
+}
